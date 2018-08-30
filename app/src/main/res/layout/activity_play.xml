@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/purple_background"
+    tools:context=".PlayActivity">
+
+    <LinearLayout
+        android:id="@+id/MainLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Questions"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_rounded_corners"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="How Many Bits In Bytes "
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:letterSpacing="0.2"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/BtnQuestion1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="50"
+                android:text="Something Something"
+                android:background="@drawable/button_rounded_corners"/>
+
+            <Button
+                android:id="@+id/BtnQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/BtnQuestion1"
+                android:layout_weight="50"
+                android:text="Something Something"
+                android:background="@drawable/button_rounded_corners"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/BtnQuestion3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="50"
+                android:text="Something Something"
+                android:background="@drawable/button_rounded_corners" />
+
+            <Button
+                android:id="@+id/BtnQuestion4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/BtnQuestion1"
+                android:layout_weight="50"
+                android:text="Something Something"
+                android:background="@drawable/button_rounded_corners"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
